@@ -1,8 +1,9 @@
 from google import genai
+import os 
 
 class ResumeOptimizer:
     def __init__(self):
-        self.api_key = "AIzaSyBeYojbmlxrXygkMEbaK7P4OW-MO8dzxGI"
+        self.api_key = os.environ.get("GENAI_API_KEY")
         self.client = genai.Client(api_key=self.api_key)
 
     @staticmethod
@@ -48,4 +49,4 @@ class ResumeOptimizer:
 if __name__=="__main__":
     resume_optimizer = ResumeOptimizer()
     # TODO: Testing resume optimizer on sample resume and job description here
-    
+    print(resume_optimizer.api_key)
