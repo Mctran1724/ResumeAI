@@ -7,7 +7,9 @@ def main():
     job_description_text: str = job_description_parser.parse_linkedin('https://www.linkedin.com/jobs/view/4213370079/')
 
     response = resume_optimizer.optimize_resume(resume_text, job_description_text)
-    print(response)
+    print(response.split("###"))
+    resume_text = response.split("###")[1]	
+    explanation = response.split("###")[2]
     return
 
 

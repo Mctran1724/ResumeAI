@@ -56,7 +56,7 @@ class ResumeOptimizer:
         Discuss Changes: Provide a summary of the changes made to the resume, highlighting the specific sections or bullet points that have been optimized and how they align with the vocabulary and tone of the job description.
         Suggest improvements: Suggest additional potential improvements, such as adding new sections, skills, experiences, or bullet points, to further align with the job description and enhance the candidate's profile.
         
-        Output Format: Provide the optimized resume text. Clearly indicate which sections or bullet points have been modified. Please present the full optimized resume for ease of use followed by a summary and explanation of the changes.
+        Output Format: Provide the optimized resume text. Clearly indicate which sections or bullet points have been modified. Please present the full optimized resume for ease of use followed by a summary and explanation of the changes. Begin and end the resume text itself with a tag "###" to separate it from the rest of the response.
         Constraint: Focus primarily on optimizing the language within the existing structure and content of the resume. Do not add entirely new sections or invent experiences not present in the original resume text. Please limit the number of bullet points to a maximum of 6.
         Desired Output: The optimized resume text, with bullet points and professional summary strategically rewritten to align with the job description, followed by a summary and explanation of the optimizations, and lastly, any further suggestions for potential improvements to address the gaps between the job and candidate's profile.
         """

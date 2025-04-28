@@ -1,6 +1,5 @@
 import os, pathlib, subprocess
 from google import genai
-import latex
 
 
 class ResumeLatexWriter:
@@ -70,23 +69,27 @@ class ResumeLatexWriter:
             str: The path to the PDF file.
         """
         file_path = self._assets_directory / f"{file_name}.tex"
-        with open(file_path, "r") as f:
-            latex_code = f.read()
-            latex.build_pdf(latex_code) # Compiles LaTeX into a .pdf file named file_path
+        
+        # Use subprocess to call the LaTeX compiler on your machine 
+        # TODO maybe use docker to ensure that a compiler is installed?
+        
+
         return None
     
     def write_latex(self, file_name: str = "resume_temp") -> None:
         prompt = self._prompt()
 
         response = self.client.models.generate_content(
-            model="gemini-2.0-flash", contents=prompt
+            model="gemini-2.0-flash", contents=prompt   
         )
 
         file_path = self._assets_directory / f"{file_name}.tex"
 
+        markdown_block = response.text
+        latex_code = markdown_block.split(r"```")[1][5:]
         with open(file_path, "w+") as f:
-            f.write(response.text)
-        
+            f.write(latex_code)
+        print("LaTeX file written successfully to ", file_path)
         return 
     
     def write_resume(self, file_name: str = "resume_temp") -> None:
@@ -100,7 +103,6 @@ class ResumeLatexWriter:
         file.
         """
         self.write_latex(file_name)
-        self.compile_latex(file_name)
         return
 
     
@@ -115,6 +117,4 @@ if __name__ == "__main__":
     resume_text = resume_path.read_text()
 
     latex_writer = ResumeLatexWriter(resume_text)
-    latex_writer.compile_latex()
-    # TODO: Compile_latex function needs work :)
-    
+    latex_writer.write_latex()
