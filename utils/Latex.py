@@ -1,4 +1,6 @@
-import os, pathlib, subprocess
+import os
+import pathlib
+import subprocess
 from google import genai
 
 
@@ -69,11 +71,11 @@ class ResumeLatexWriter:
             str: The path to the PDF file.
         """
         file_path = self._assets_directory / f"{file_name}.tex"
-        
-        # Use subprocess to call the LaTeX compiler on your machine 
-        # TODO maybe use docker to ensure that a compiler is installed?
-        
-
+        curr_durr = os.getcwd()
+        os.chdir(self._assets_directory)
+        subprocess.call(["pdflatex", file_path])
+        os.chdir(curr_durr)
+            
         return None
     
     def write_latex(self, file_name: str = "resume_temp") -> None:
@@ -103,7 +105,9 @@ class ResumeLatexWriter:
         file.
         """
         self.write_latex(file_name)
-        return
+        self.compile_latex(file_name)
+        return 
+
 
     
 

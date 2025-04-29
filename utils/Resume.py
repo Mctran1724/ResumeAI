@@ -14,11 +14,6 @@ class ResumeParser:
         return resume_text
     
 
-if __name__ == '__main__':
-    resume_parser = ResumeParser()
-    resume_text = resume_parser.parse_pdf('C:/Users/Micha/Downloads/MTResume.pdf')
-    print(resume_text)
-
 class ResumeOptimizer:
     def __init__(self):
         self.api_key = os.environ.get("GEMINI_API_KEY")

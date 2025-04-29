@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.4.28)  28 APR 2025 15:46
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.4.28)  28 APR 2025 21:51
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**assets/resume_temp.tex
-(resume_temp.tex
+**C:/Users/Micha/Desktop/Projects/personal/ResumeAI/assets/resume_temp.tex
+(C:/Users/Micha/Desktop/Projects/personal/ResumeAI/assets/resume_temp.tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
 (resume.cls
@@ -228,8 +228,7 @@ tex.def
 File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count278
 \l__pdf_internal_box=\box53
-)
-No file resume_temp.aux.
+) (resume_temp.aux)
 \openout1 = `resume_temp.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 2.
@@ -250,6 +249,7 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 2.
 LaTeX Font Info:    ... okay on input line 2.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 2.
 LaTeX Font Info:    ... okay on input line 2.
+
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -313,6 +313,7 @@ ii
 (C:\Users\Micha\AppData\Local\Programs\MiKTeX\tex/latex/graphics\mathcolor.ltx)
 )
 Package hyperref Info: Link coloring ON on input line 2.
+ (resume_temp.out) (resume_temp.out)
 \@outlinefile=\write3
 \openout3 = `resume_temp.out'.
 
@@ -344,23 +345,17 @@ L3 programming layer <2024-01-04>
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.88pt have occurred.
 
-
-Package rerunfilecheck Warning: File `resume_temp.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `resume_temp.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  D41D8CD98F00B204E9800998ECF8427E;0.
+Package rerunfilecheck Info: File `resume_temp.out' has not changed.
+(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 9260 strings out of 474486
- 145910 string characters out of 5743755
- 1942542 words of memory out of 5000000
- 31467 multiletter control sequences out of 15000+600000
+ 9269 strings out of 474486
+ 146391 string characters out of 5743755
+ 1941542 words of memory out of 5000000
+ 31469 multiletter control sequences out of 15000+600000
  563014 words of font info for 52 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 90i,5n,93p,1207b,434s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 90i,5n,93p,1257b,434s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\Micha\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm
 1095.pk><C:/Users/Micha/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
 ts/cm/cmbx10.pfb><C:/Users/Micha/AppData/Local/Programs/MiKTeX/fonts/type1/publ
@@ -369,7 +364,7 @@ ype1/public/amsfonts/cm/cmmi10.pfb><C:/Users/Micha/AppData/Local/Programs/MiKTe
 X/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Micha/AppData/Local/Progra
 ms/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Micha/AppData/Loc
 al/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on resume_temp.pdf (2 pages, 93757 bytes).
+Output written on resume_temp.pdf (2 pages, 93759 bytes).
 PDF statistics:
  53 PDF objects out of 1000 (max. 8388607)
  3 named destinations out of 1000 (max. 500000)
